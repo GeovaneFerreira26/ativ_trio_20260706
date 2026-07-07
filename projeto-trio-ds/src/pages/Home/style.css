@@ -1,0 +1,61 @@
+/* Container principal da Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  background-color: #fafafa; 
+  padding-top: 0px; /* Deixei o espaçamento apenas em cima. Tirei das laterais para a imagem poder esticar */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Título Principal - Cor Neutra */
+.home h1 {
+  color: #555555; /* Cinza escuro para o "Seja bem-vindo à" */
+  font-size: 42px; 
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  padding: 0 5%; /* Mantém o texto com uma margem de segurança no celular */
+}
+
+/* Cores da Logo no Título */
+.home h1 .logo-vital {
+  color: #3bb383; /* Verde médico */
+}
+
+.home h1 .logo-saude {
+  color: #8a4baf; /* Roxo elegante */
+}
+
+/* Subtítulo */
+.home p {
+  color: #777777; /* Um cinza um pouco mais claro que o título */
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 40px; 
+  padding: 0 5%; /* Margem de segurança para telas pequenas */
+  line-height: 1.5;
+}
+
+/* Imagem de Destaque */
+.home-image {
+  width: 100%; 
+  /* 1. CONTROLE DE ALTURA: Limita a altura máxima para não engolir a tela toda no PC */
+  max-height: 550px; 
+  height: 60vh; /* Ocupa 60% da altura da tela visível */
+  display: block; 
+  object-fit: cover; 
+  object-position: center 20%; /* Foca um pouco mais na parte de cima da foto (rostos) */
+  
+  /* 2. FILTRO CINEMATOGRÁFICO: Reduz levemente o brilho e aumenta o contraste */
+  filter: brightness(0.85) contrast(1.1);
+  
+  /* 3. MÁSCARA DE DEGRADÊ: Faz a borda inferior desaparecer suavemente */
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+
+  /* 4. ANIMAÇÃO: Chama o efeito criado lá embaixo */
+  animation: fadeInZoom 1.5s ease-out forwards;
+}

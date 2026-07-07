@@ -1,0 +1,109 @@
+/* Container principal da página */
+.sobrenos-page {
+  background-color: #fafafa; /* Mantém o padrão de fundo claro do site */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  min-height: calc(100vh - 100px);
+  
+  /* NOVO: Linha divisória fina e elegante no topo da página */
+  border-top: 1px solid #ebebeb; 
+}
+
+/* --- SEÇÃO DO BANNER (TÍTULO E SUBTÍTULO) --- */
+.sobrenos-banner {
+  text-align: center;
+  padding: 60px 5% 40px;
+}
+
+.sobrenos-banner h1 {
+  color: #555555;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+
+.sobrenos-banner p {
+  color: #777777;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto; /* Centraliza o texto */
+}
+
+/* --- SEÇÃO DOS QUADRADOS COLORIDOS --- */
+.sobrenos-content {
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+  padding: 0 5% 80px;
+  flex-wrap: wrap; 
+}
+
+/* Estilo base para todos os quadrados (Mais sofisticado) */
+.sobrenos-card {
+  flex: 1; 
+  min-width: 280px; 
+  max-width: 350px;
+  padding: 40px 30px;
+  border-radius: 16px; /* Arredondamento um pouco mais suave e moderno */
+  background-color: transparent; /* O fundo base agora é transparente */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Sombra super leve, quase invisível */
+  transition: all 0.4s ease; /* Animação mais suave */
+}
+
+/* Efeito ao passar o mouse (Levanta e a sombra fica um pouquinho mais marcada) */
+.sobrenos-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Títulos mais delicados e espaçados */
+.sobrenos-card h2 {
+  font-size: 18px; /* Fonte um pouco menor e mais elegante */
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* Mais espaço entre as letras dá um ar sofisticado */
+}
+
+/* Textos com leitura confortável */
+.sobrenos-card p {
+  color: #666666; /* Cinza médio, muito mais suave que o preto */
+  font-size: 15px;
+  line-height: 1.7; /* Mais espaço entre as linhas do texto */
+  margin: 0;
+}
+
+/* --- CORES INDIVIDUAIS DE CADA QUADRADO (TRANSPARENTES E DELICADAS) --- */
+/* O rgba() usa as mesmas cores da sua logo, mas com apenas 5% de opacidade no fundo (0.05) */
+
+/* 1º Quadrado (Nossa missão) - Verde Claro */
+.sobrenos-card:nth-child(1) {
+  background-color: rgba(59, 179, 131, 0.178); 
+  border: 1px solid rgba(59, 179, 131, 0.2); /* Bordinha verde transparente */
+}
+.sobrenos-card:nth-child(1) h2 {
+  color: #3bb383; /* Título no verde da marca */
+  border-bottom: 1px solid rgba(59, 179, 131, 0.3); /* Linha divisória verde suave */
+}
+
+/* 2º Quadrado (Quem somos) - Roxo Claro */
+.sobrenos-card:nth-child(2) {
+  background-color: rgba(138, 75, 175, 0.205); 
+  border: 1px solid rgba(138, 75, 175, 0.2); 
+}
+.sobrenos-card:nth-child(2) h2 {
+  color: #9e5bc5; /* Título no roxo da marca */
+  border-bottom: 1px solid rgba(138, 75, 175, 0.3); 
+}
+
+/* 3º Quadrado (Nosso compromisso) - Verde Azulado Claro */
+.sobrenos-card:nth-child(3) {
+  background-color: rgba(59, 179, 131, 0.178); 
+  border: 1px solid rgba(42, 138, 99, 0.2); 
+}
+.sobrenos-card:nth-child(3) h2 {
+  color: #2a8a63; 
+  border-bottom: 1px solid rgba(42, 138, 99, 0.3); 
+}

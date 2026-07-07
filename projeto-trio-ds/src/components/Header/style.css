@@ -1,0 +1,58 @@
+/* Estilos para o Header (header-vitalsaude) */
+.header-vitalsaude {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px 5%;
+  
+  /* NOVO: A linha cinza bem clarinha na base do header */
+  border-bottom: 1px solid #ebebeb; 
+  
+  /* AJUSTADO: Deixei a sombra um pouco mais suave e espalhada para combinar com a linha */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Estilo para o "Logo em Texto" (h1) -> A palavra "Vital" pega essa cor */
+.header-vitalsaude h1 {
+  margin: 0; 
+  color: #3bb383; /* Verde médico */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 35px; 
+  font-weight: 700; 
+  letter-spacing: 1px;
+}
+
+/* NOVO: Estilo específico para a palavra "Saúde" */
+.header-vitalsaude h1 .logo-saude {
+  color: #8a4baf; /* Tom de roxo elegante */
+}
+
+/* Estilos para a NavBar (header-nav e header-menu-list) */
+.header-nav {
+  /* Mantido vazio conforme seu ajuste anterior */
+}
+
+.header-menu-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; /* CORREÇÃO: Removido o '100' sem unidade de medida para não quebrar o layout */
+  gap: 40px; 
+}
+
+.header-menu-list li a {
+  text-decoration: none;
+  color: #555555; 
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; 
+  letter-spacing: 0.8px; 
+  transition: color 0.3s ease; 
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.header-menu-list li a:hover {
+  color: #3bb383; 
+}   

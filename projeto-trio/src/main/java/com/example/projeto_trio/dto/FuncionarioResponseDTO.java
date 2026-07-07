@@ -1,49 +1,21 @@
-package com.example.projeto_trio.model;
+package com.example.projeto_trio.dto;
 
-
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "tab_funcionarios")
-public class FuncionarioModel {
-
-    @Id
-    @GeneratedValue (strategy =GenerationType.IDENTITY)
-
-    private Long id;
-    @Column(nullable = false)
+public class FuncionarioResponseDTO {
     private String nome;
-
-    @Column(nullable = false, precision = 11)
     private String telefone;
-
-    @Column(nullable = false, unique = true)
     private String email;
-
-    @Column(nullable = false)
     private String cargo;
-
-    @Column(nullable = false)
     private String setor;
 
-    public FuncionarioModel() {
+    public FuncionarioResponseDTO() {
     }
 
-    public FuncionarioModel(Long id, String nome, String telefone, String email, String cargo, String setor) {
-        this.id = id;
+    public FuncionarioResponseDTO(String nome, String telefone, String email, String cargo, String setor) {
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
         this.cargo = cargo;
         this.setor = setor;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getNome() {
